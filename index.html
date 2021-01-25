@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Venom Bank</title>
+</head>
+
+<body>
+    <div id="login-area">
+        <h1 class="text-center">Welcome to Venom Bank</h1>
+        <div class="submit-area">
+            <h4>Login</h4><br>
+            <input type="text" class="form-control" placeholder="Enter Your Email"><br>
+            <input type="password" class="form-control" name="" id="" placeholder="Enter Your Password"><br>
+            <button id="login" class="btn btn-success">Enter</button>
+        </div>
+    </div>
+    <div id="transaction-area">
+        <h1>Transaction Area</h1>
+    </div>
+    <script>
+        const loginBtn = document.getElementById("login");
+        loginBtn.addEventListener("click", function () {
+            const loginArea = document.getElementById("login-area"); loginArea.style.display = "none";
+            const transactionArea = document.getElementById("transaction-area");
+            transactionArea.style.display = "block";
+        })
+    </script>
+</body>
+
+</html>
